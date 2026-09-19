@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a searchable PostgreSQL DBA command library with Command Vault. Organize SQL diagnostics, maintenance, backup, restore, performance, security, and troubleshooting commands locally on your PC.">
+  <meta name="theme-color" content="#071426">
+  <title>PostgreSQL DBA Command Library — Command Vault</title>
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFE3TDV91"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZWFE3TDV91');
+  </script>
+  <link rel="canonical" href="https://commandvaultapp.com/postgresql-dba-command-library.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Command Vault">
+  <meta property="og:title" content="PostgreSQL DBA Command Library — Command Vault">
+  <meta property="og:description" content="Organize PostgreSQL DBA and SQL diagnostics, maintenance, backup, restore, performance, security, and troubleshooting commands in a local-first Windows command library.">
+  <meta property="og:url" content="https://commandvaultapp.com/postgresql-dba-command-library.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PostgreSQL DBA Command Library — Command Vault">
+  <meta name="twitter:description" content="A local-first PostgreSQL DBA command organizer for database administrators and IT professionals.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "url": "https://commandvaultapp.com/postgresql-dba-command-library.html", "name": "PostgreSQL DBA Command Library \u2014 Command Vault", "description": "Organize PostgreSQL DBA commands, SQL diagnostics, maintenance queries, troubleshooting references, tags, favorites, and reusable database administration knowledge in a local-first Windows command library."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Command Vault store PostgreSQL and SQL commands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Command Vault can organize PostgreSQL and SQL command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes."}}, {"@type": "Question", "name": "Is Command Vault a PostgreSQL query execution tool?", "acceptedAnswer": {"@type": "Answer", "text": "No. Command Vault is a command library and reference tool. Review and execute PostgreSQL commands in the appropriate database administration environment, such as psql or another trusted SQL client."}}, {"@type": "Question", "name": "Where is my PostgreSQL command library stored?", "acceptedAnswer": {"@type": "Answer", "text": "Command Vault stores its command library locally on your Windows computer using SQLite."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="Command Vault home">
+        <span class="brand-mark">CV</span>
+        <span>Command Vault</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#packs">Command Packs</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing-hero">
+      <div class="wrap landing-hero-grid">
+        <div>
+          <p class="eyebrow">POSTGRESQL DBA COMMAND ORGANIZER</p>
+          <h1>Build a PostgreSQL DBA command library you can rely on.</h1>
+          <p class="hero-copy">
+            Keep the SQL queries, diagnostics, maintenance commands, backup and restore references, and troubleshooting snippets you use in one searchable local library instead of scattered scripts, terminal history, ticket notes, folders, wiki pages, and browser bookmarks.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary landing-download"
+               href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+              Download Command Vault
+            </a>
+            <a class="button secondary landing-pro" href="index.html#pricing">View Pro Options</a>
+          </div>
+          <p class="availability">Command Vault 1.1.0 • Windows x64 • Community edition available</p>
+        </div>
+
+        <aside class="product-card" aria-label="PostgreSQL DBA command library example">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <div class="terminal-content">
+            <p><span class="prompt">psql&gt;</span> SELECT datname, numbackends FROM pg_stat_database;</p>
+            <p class="terminal-accent">Category: Database Health</p>
+            <p>Platform: PostgreSQL</p>
+            <p>Language: SQL</p>
+            <div class="terminal-rule"></div>
+            <p><span class="prompt">psql&gt;</span> SELECT * FROM pg_stat_activity;</p>
+            <p class="terminal-accent">Category: Sessions</p>
+            <p>Tags: activity, monitoring</p>
+            <p>Favorite: Yes</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap content-narrow">
+        <p class="section-kicker">THE PROBLEM</p>
+        <h2>PostgreSQL commands accumulate faster than your references stay organized.</h2>
+        <p class="section-lead">
+          PostgreSQL administrators build up trusted SQL queries and psql references for health checks, session analysis, backup verification, permissions, maintenance, troubleshooting, and performance work. Over time those commands become fragmented across scripts, shell history, documentation, tickets, project folders, and saved notes.
+        </p>
+        <div class="pain-grid">
+          <article class="feature-card"><h3>Query sprawl</h3><p>Useful SQL and psql commands end up in different folders, terminals, tickets, and personal notes.</p></article>
+          <article class="feature-card"><h3>Lost operational context</h3><p>A query is more useful when you remember why it exists, what it checks, and when it is appropriate to run.</p></article>
+          <article class="feature-card"><h3>Repeated lookup</h3><p>DBAs often search for the same PostgreSQL syntax repeatedly instead of maintaining one trusted reference library.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap">
+        <p class="section-kicker">A BETTER WORKFLOW</p>
+        <h2>Turn PostgreSQL commands into an organized database operations library.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>Searchable command records</h3><p>Store PostgreSQL commands with names, descriptions, categories, platform details, language metadata, tags, favorites, and notes.</p></article>
+          <article class="feature-card"><h3>Favorites &amp; usage history</h3><p>Keep common health, session, backup, security, and troubleshooting queries easy to surface.</p></article>
+          <article class="feature-card"><h3>Templates</h3><p>Save reusable query patterns for database names, schemas, roles, tables, date ranges, and environment-specific values.</p></article>
+          <article class="feature-card"><h3>Local-first storage</h3><p>Your Command Vault library is stored locally on your Windows PC using SQLite.</p></article>
+          <article class="feature-card"><h3>Import, export &amp; backup</h3><p>Move or protect your library with portable library and backup workflows.</p></article>
+          <article class="feature-card"><h3>Professional command packs</h3><p>Extend your own DBA library with curated PostgreSQL content while keeping your environment-specific knowledge in the same application.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker">WHAT TO ORGANIZE</p>
+        <h2>Build around the PostgreSQL work you perform every day.</h2>
+        <p class="section-lead">A useful PostgreSQL command library groups queries by operational purpose so you can find the right diagnostic or maintenance command quickly.</p>
+        <div class="topic-grid">
+          <div class="topic-card"><strong>Database Health</strong><span>Database status, connections, activity, size, configuration, and health checks</span></div>
+          <div class="topic-card"><strong>Performance</strong><span>Sessions, locks, long-running queries, statistics, workload, and execution diagnostics</span></div>
+          <div class="topic-card"><strong>Backup &amp; Restore</strong><span>pg_dump, pg_restore, backup validation, and recovery references</span></div>
+          <div class="topic-card"><strong>Tables &amp; Indexes</strong><span>Relations, indexes, bloat indicators, statistics, vacuum, and analyze references</span></div>
+          <div class="topic-card"><strong>Roles &amp; Security</strong><span>Roles, privileges, ownership, permissions, and access-review queries</span></div>
+          <div class="topic-card"><strong>Capacity &amp; Storage</strong><span>Database size, table size, index size, storage usage, and growth checks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap split-callout">
+        <div>
+          <p class="section-kicker">POSTGRESQL DBA PACK</p>
+          <h2>Start with your own DBA knowledge. Extend it with a curated baseline.</h2>
+          <p class="section-lead">
+            Command Vault's PostgreSQL DBA Pack contains 97 curated commands and is designed to complement — not replace — the queries, standards, runbooks, and operational notes specific to your own PostgreSQL environment.
+          </p>
+        </div>
+        <div class="landing-card">
+          <strong>PostgreSQL DBA</strong>
+          <span>97 commands</span>
+          <span>$24.99</span>
+          <p>Command packs are separate products from Command Vault Pro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="wrap faq-wrap">
+        <p class="section-kicker">POSTGRESQL DBA FAQ</p>
+        <h2>Common questions.</h2>
+        <div class="faq-grid">
+          <details class="faq-item"><summary>Can Command Vault store PostgreSQL and SQL commands?</summary><p>Yes. Command Vault can organize PostgreSQL and SQL command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes.</p></details>
+          <details class="faq-item"><summary>Is Command Vault a PostgreSQL query execution tool?</summary><p>No. Command Vault is a command library and reference tool. Review and execute PostgreSQL commands in the appropriate database administration environment, such as psql or another trusted SQL client.</p></details>
+          <details class="faq-item"><summary>Where is my PostgreSQL command library stored?</summary><p>Command Vault stores its command library locally on your Windows computer using SQLite.</p></details>
+          <details class="faq-item"><summary>Do I need Pro to start organizing PostgreSQL commands?</summary><p>No. You can begin with Community and upgrade later when you need premium productivity, backup, and update-related features.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-final">
+      <div class="wrap landing-final-inner">
+        <p class="section-kicker">START BUILDING YOUR LIBRARY</p>
+        <h2>Stop searching through old scripts for the same PostgreSQL commands.</h2>
+        <p class="section-lead">Download Command Vault for Windows x64 and begin organizing the PostgreSQL commands you already rely on.</p>
+        <div class="section-actions">
+          <a class="button primary landing-download"
+             href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+            Download Community
+          </a>
+          <a class="button secondary landing-pro" href="index.html#pricing">View Pro Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div>
+        <strong>Command Vault</strong>
+        <p>The IT Professional's Command Library</p>
+        <p class="footer-links">
+          <a href="index.html">Home</a><span>•</span>
+          <a href="privacy.html">Privacy</a><span>•</span>
+          <a href="terms.html">Terms</a><span>•</span>
+          <a href="refunds.html">Refunds &amp; Licensing</a><span>•</span>
+          <a href="support.html">Support</a>
+        </p>
+      </div>
+      <p>© 2026 Command Vault. Operated by M3 Marketplace LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.landing-download').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_download_click', {
+              landing_page: 'postgresql_dba',
+              link_url: link.href
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.landing-pro').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_pro_click', {
+              landing_page: 'postgresql_dba',
+              destination: 'pricing'
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.faq-item').forEach(function (item) {
+        item.addEventListener('toggle', function () {
+          if (item.open && typeof gtag === 'function') {
+            const summary = item.querySelector('summary');
+            gtag('event', 'faq_engagement', {
+              page_topic: 'postgresql_dba',
+              faq_question: summary ? summary.textContent.trim() : 'unknown'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
