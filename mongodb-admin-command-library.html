@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a searchable MongoDB administrator command library with Command Vault. Organize mongosh commands for databases, collections, indexes, users, replication, performance, backup, and troubleshooting locally on your PC.">
+  <meta name="theme-color" content="#071426">
+  <title>MongoDB Administrator Command Library — Command Vault</title>
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFE3TDV91"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZWFE3TDV91');
+  </script>
+  <link rel="canonical" href="https://commandvaultapp.com/mongodb-admin-command-library.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Command Vault">
+  <meta property="og:title" content="MongoDB Administrator Command Library — Command Vault">
+  <meta property="og:description" content="Organize MongoDB and mongosh commands for databases, collections, indexes, users, replication, performance, backup, and troubleshooting in a local-first Windows command library.">
+  <meta property="og:url" content="https://commandvaultapp.com/mongodb-admin-command-library.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MongoDB Administrator Command Library — Command Vault">
+  <meta name="twitter:description" content="A local-first MongoDB command organizer for database administrators and IT professionals.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "url": "https://commandvaultapp.com/mongodb-admin-command-library.html", "name": "MongoDB Administrator Command Library \u2014 Command Vault", "description": "Organize MongoDB administration commands, mongosh references, troubleshooting steps, tags, favorites, and reusable database operations knowledge in a local-first Windows command library."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Command Vault store MongoDB and mongosh commands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Command Vault can organize MongoDB and mongosh command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes."}}, {"@type": "Question", "name": "Is Command Vault a MongoDB shell or database client?", "acceptedAnswer": {"@type": "Answer", "text": "No. Command Vault is a command library and reference tool. Review and execute MongoDB commands in the appropriate mongosh, Compass, or other trusted administration environment."}}, {"@type": "Question", "name": "Where is my MongoDB command library stored?", "acceptedAnswer": {"@type": "Answer", "text": "Command Vault stores its command library locally on your Windows computer using SQLite."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="Command Vault home">
+        <span class="brand-mark">CV</span>
+        <span>Command Vault</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#packs">Command Packs</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing-hero">
+      <div class="wrap landing-hero-grid">
+        <div>
+          <p class="eyebrow">MONGODB ADMINISTRATOR COMMAND ORGANIZER</p>
+          <h1>Build a MongoDB command library you can reuse with confidence.</h1>
+          <p class="hero-copy">
+            Keep the mongosh commands, diagnostics, index checks, user-management references, replication queries, and troubleshooting snippets you rely on in one searchable local library instead of scattered notes, shell history, tickets, scripts, and browser bookmarks.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary landing-download"
+               href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+              Download Command Vault
+            </a>
+            <a class="button secondary landing-pro" href="index.html#pricing">View Pro Options</a>
+          </div>
+          <p class="availability">Command Vault 1.1.0 • Windows x64 • Community edition available</p>
+        </div>
+
+        <aside class="product-card" aria-label="MongoDB administrator command library example">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <div class="terminal-content">
+            <p><span class="prompt">mongosh&gt;</span> db.serverStatus()</p>
+            <p class="terminal-accent">Category: Server Health</p>
+            <p>Platform: MongoDB</p>
+            <p>Tags: monitoring, diagnostics</p>
+            <div class="terminal-rule"></div>
+            <p><span class="prompt">mongosh&gt;</span> db.getCollectionInfos()</p>
+            <p class="terminal-accent">Category: Collections</p>
+            <p>Platform: MongoDB</p>
+            <p>Favorite: Yes</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap content-narrow">
+        <p class="section-kicker">THE PROBLEM</p>
+        <h2>MongoDB administration knowledge can become fragmented quickly.</h2>
+        <p class="section-lead">
+          Administrators accumulate useful mongosh commands across monitoring work, incident response, index tuning, security reviews, backup operations, replication checks, and application troubleshooting. Over time those commands get spread across shell history, tickets, saved scripts, documentation, and project notes.
+        </p>
+        <div class="pain-grid">
+          <article class="feature-card"><h3>Shell history is not a knowledge base</h3><p>The exact command you need may have been used on another host, in another session, or months ago.</p></article>
+          <article class="feature-card"><h3>Operational context gets lost</h3><p>A command is more valuable when you remember why it exists, what it checks, and when it is safe to use.</p></article>
+          <article class="feature-card"><h3>Repeated research</h3><p>Admins often search for the same MongoDB syntax repeatedly instead of maintaining one trusted personal reference library.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap">
+        <p class="section-kicker">A BETTER WORKFLOW</p>
+        <h2>Turn mongosh commands into an organized database operations library.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>Searchable command records</h3><p>Store MongoDB commands with names, descriptions, categories, platform details, language metadata, tags, favorites, and notes.</p></article>
+          <article class="feature-card"><h3>Favorites &amp; usage history</h3><p>Keep common health, indexing, replication, security, and troubleshooting commands easy to surface.</p></article>
+          <article class="feature-card"><h3>Templates</h3><p>Save reusable command patterns for database names, collection names, users, roles, hosts, and environment-specific values.</p></article>
+          <article class="feature-card"><h3>Local-first storage</h3><p>Your Command Vault library is stored locally on your Windows PC using SQLite.</p></article>
+          <article class="feature-card"><h3>Import, export &amp; backup</h3><p>Move or protect your library with portable library and backup workflows.</p></article>
+          <article class="feature-card"><h3>Professional command packs</h3><p>Extend your own MongoDB library with curated content while keeping your environment-specific knowledge in the same application.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker">WHAT TO ORGANIZE</p>
+        <h2>Build around the MongoDB work you perform every day.</h2>
+        <p class="section-lead">A useful MongoDB command library groups commands by operational purpose so you can retrieve the right syntax quickly.</p>
+        <div class="topic-grid">
+          <div class="topic-card"><strong>Server Health</strong><span>Status, connections, memory, operations, metrics, and server diagnostics</span></div>
+          <div class="topic-card"><strong>Databases &amp; Collections</strong><span>Database inventory, collections, document counts, metadata, and storage checks</span></div>
+          <div class="topic-card"><strong>Indexes &amp; Performance</strong><span>Index inventory, query plans, profiling, performance diagnostics, and usage checks</span></div>
+          <div class="topic-card"><strong>Replication</strong><span>Replica-set status, members, lag, configuration, and operational health</span></div>
+          <div class="topic-card"><strong>Users &amp; Security</strong><span>Users, roles, privileges, authentication, and access-review references</span></div>
+          <div class="topic-card"><strong>Backup &amp; Maintenance</strong><span>mongodump, mongorestore, validation, maintenance, and recovery references</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap split-callout">
+        <div>
+          <p class="section-kicker">MONGODB ADMINISTRATOR PACK</p>
+          <h2>Start with your own database knowledge. Extend it with a curated baseline.</h2>
+          <p class="section-lead">
+            Command Vault's MongoDB Administrator Pack contains 97 curated commands and is designed to complement — not replace — the procedures, standards, and operational notes specific to your own MongoDB environments.
+          </p>
+        </div>
+        <div class="landing-card">
+          <strong>MongoDB Administrator</strong>
+          <span>97 commands</span>
+          <span>$19.99</span>
+          <p>Command packs are separate products from Command Vault Pro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="wrap faq-wrap">
+        <p class="section-kicker">MONGODB ADMINISTRATOR FAQ</p>
+        <h2>Common questions.</h2>
+        <div class="faq-grid">
+          <details class="faq-item"><summary>Can Command Vault store MongoDB and mongosh commands?</summary><p>Yes. Command Vault can organize MongoDB and mongosh command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes.</p></details>
+          <details class="faq-item"><summary>Is Command Vault a MongoDB shell or database client?</summary><p>No. Command Vault is a command library and reference tool. Review and execute MongoDB commands in the appropriate mongosh, Compass, or other trusted administration environment.</p></details>
+          <details class="faq-item"><summary>Where is my MongoDB command library stored?</summary><p>Command Vault stores its command library locally on your Windows computer using SQLite.</p></details>
+          <details class="faq-item"><summary>Do I need Pro to start organizing MongoDB commands?</summary><p>No. You can begin with Community and upgrade later when you need premium productivity, backup, and update-related features.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-final">
+      <div class="wrap landing-final-inner">
+        <p class="section-kicker">START BUILDING YOUR LIBRARY</p>
+        <h2>Stop searching through old notes for the same MongoDB commands.</h2>
+        <p class="section-lead">Download Command Vault for Windows x64 and begin organizing the MongoDB commands you already rely on.</p>
+        <div class="section-actions">
+          <a class="button primary landing-download"
+             href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+            Download Community
+          </a>
+          <a class="button secondary landing-pro" href="index.html#pricing">View Pro Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div>
+        <strong>Command Vault</strong>
+        <p>The IT Professional's Command Library</p>
+        <p class="footer-links">
+          <a href="index.html">Home</a><span>•</span>
+          <a href="privacy.html">Privacy</a><span>•</span>
+          <a href="terms.html">Terms</a><span>•</span>
+          <a href="refunds.html">Refunds &amp; Licensing</a><span>•</span>
+          <a href="support.html">Support</a>
+        </p>
+      </div>
+      <p>© 2026 Command Vault. Operated by M3 Marketplace LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.landing-download').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_download_click', {
+              landing_page: 'mongodb_admin',
+              link_url: link.href
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.landing-pro').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_pro_click', {
+              landing_page: 'mongodb_admin',
+              destination: 'pricing'
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.faq-item').forEach(function (item) {
+        item.addEventListener('toggle', function () {
+          if (item.open && typeof gtag === 'function') {
+            const summary = item.querySelector('summary');
+            gtag('event', 'faq_engagement', {
+              page_topic: 'mongodb_admin',
+              faq_question: summary ? summary.textContent.trim() : 'unknown'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
