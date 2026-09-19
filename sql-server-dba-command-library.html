@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a searchable SQL Server DBA command library with Command Vault. Organize T-SQL diagnostics, maintenance, backup, restore, performance, security, and troubleshooting commands locally on your PC.">
+  <meta name="theme-color" content="#071426">
+  <title>SQL Server DBA Command Library — Command Vault</title>
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFE3TDV91"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZWFE3TDV91');
+  </script>
+  <link rel="canonical" href="https://commandvaultapp.com/sql-server-dba-command-library.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Command Vault">
+  <meta property="og:title" content="SQL Server DBA Command Library — Command Vault">
+  <meta property="og:description" content="Organize SQL Server DBA and T-SQL diagnostics, maintenance, backup, restore, performance, security, and troubleshooting commands in a local-first Windows command library.">
+  <meta property="og:url" content="https://commandvaultapp.com/sql-server-dba-command-library.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SQL Server DBA Command Library — Command Vault">
+  <meta name="twitter:description" content="A local-first SQL Server DBA command organizer for database administrators and IT professionals.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "url": "https://commandvaultapp.com/sql-server-dba-command-library.html", "name": "SQL Server DBA Command Library \u2014 Command Vault", "description": "Organize SQL Server DBA commands, T-SQL diagnostics, maintenance queries, troubleshooting references, tags, favorites, and reusable database administration knowledge in a local-first Windows command library."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Command Vault store SQL Server and T-SQL commands?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Command Vault can organize SQL Server and T-SQL command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes."}}, {"@type": "Question", "name": "Is Command Vault a SQL Server query execution tool?", "acceptedAnswer": {"@type": "Answer", "text": "No. Command Vault is a command library and reference tool. Review and execute SQL Server commands in the appropriate database administration environment, such as SQL Server Management Studio or another trusted SQL client."}}, {"@type": "Question", "name": "Where is my SQL Server command library stored?", "acceptedAnswer": {"@type": "Answer", "text": "Command Vault stores its command library locally on your Windows computer using SQLite."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="Command Vault home">
+        <span class="brand-mark">CV</span>
+        <span>Command Vault</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#packs">Command Packs</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing-hero">
+      <div class="wrap landing-hero-grid">
+        <div>
+          <p class="eyebrow">SQL SERVER DBA COMMAND ORGANIZER</p>
+          <h1>Build a SQL Server DBA command library you can rely on.</h1>
+          <p class="hero-copy">
+            Keep the T-SQL queries, diagnostics, maintenance commands, backup and restore references, and troubleshooting snippets you use in one searchable local library instead of scattered scripts, ticket notes, folders, wiki pages, and browser bookmarks.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary landing-download"
+               href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+              Download Command Vault
+            </a>
+            <a class="button secondary landing-pro" href="index.html#pricing">View Pro Options</a>
+          </div>
+          <p class="availability">Command Vault 1.1.0 • Windows x64 • Community edition available</p>
+        </div>
+
+        <aside class="product-card" aria-label="SQL Server DBA command library example">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <div class="terminal-content">
+            <p><span class="prompt">SQL&gt;</span> SELECT name, state_desc FROM sys.databases;</p>
+            <p class="terminal-accent">Category: Database Health</p>
+            <p>Platform: SQL Server</p>
+            <p>Language: T-SQL</p>
+            <div class="terminal-rule"></div>
+            <p><span class="prompt">SQL&gt;</span> DBCC SQLPERF(LOGSPACE);</p>
+            <p class="terminal-accent">Category: Capacity</p>
+            <p>Tags: transaction log, monitoring</p>
+            <p>Favorite: Yes</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap content-narrow">
+        <p class="section-kicker">THE PROBLEM</p>
+        <h2>DBA commands multiply faster than your notes stay organized.</h2>
+        <p class="section-lead">
+          SQL Server administrators build up trusted T-SQL queries for health checks, performance analysis, backup validation, security reviews, troubleshooting, and maintenance. Over time those commands become fragmented across script folders, SSMS tabs, documentation, tickets, email, and old project directories.
+        </p>
+        <div class="pain-grid">
+          <article class="feature-card"><h3>Script sprawl</h3><p>Useful queries end up in different folders, machines, tickets, and personal notes.</p></article>
+          <article class="feature-card"><h3>Lost operational context</h3><p>A query is far more useful when you remember why it exists, what it checks, and when it is safe to run.</p></article>
+          <article class="feature-card"><h3>Repeated lookup</h3><p>DBAs often recreate or search for the same diagnostic syntax instead of maintaining one trusted reference library.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap">
+        <p class="section-kicker">A BETTER WORKFLOW</p>
+        <h2>Turn T-SQL snippets into an organized database operations library.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>Searchable command records</h3><p>Store T-SQL commands with names, descriptions, categories, platform details, language metadata, tags, favorites, and notes.</p></article>
+          <article class="feature-card"><h3>Favorites &amp; usage history</h3><p>Keep common health, performance, backup, and troubleshooting queries easy to surface.</p></article>
+          <article class="feature-card"><h3>Templates</h3><p>Save reusable query patterns for database names, object names, login names, date ranges, and environment-specific values.</p></article>
+          <article class="feature-card"><h3>Local-first storage</h3><p>Your Command Vault library is stored locally on your Windows PC using SQLite.</p></article>
+          <article class="feature-card"><h3>Import, export &amp; backup</h3><p>Move or protect your library with portable library and backup workflows.</p></article>
+          <article class="feature-card"><h3>Professional command packs</h3><p>Extend your own DBA library with curated SQL Server content while keeping your environment-specific knowledge in the same application.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="section-kicker">WHAT TO ORGANIZE</p>
+        <h2>Build around the SQL Server work you perform every day.</h2>
+        <p class="section-lead">A useful DBA command library groups queries by operational purpose so you can find the right diagnostic or maintenance command quickly.</p>
+        <div class="topic-grid">
+          <div class="topic-card"><strong>Database Health</strong><span>Status, recovery model, compatibility, file state, and database checks</span></div>
+          <div class="topic-card"><strong>Performance</strong><span>Waits, sessions, blocking, execution activity, memory, and workload diagnostics</span></div>
+          <div class="topic-card"><strong>Backup &amp; Restore</strong><span>Backup history, restore validation, recovery references, and protection checks</span></div>
+          <div class="topic-card"><strong>Indexes &amp; Statistics</strong><span>Index usage, fragmentation, statistics, and maintenance references</span></div>
+          <div class="topic-card"><strong>Security</strong><span>Logins, users, permissions, roles, and access-review queries</span></div>
+          <div class="topic-card"><strong>Capacity &amp; Storage</strong><span>Database files, transaction logs, growth, space usage, and sizing checks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-accent">
+      <div class="wrap split-callout">
+        <div>
+          <p class="section-kicker">SQL SERVER DBA PACK</p>
+          <h2>Start with your own DBA knowledge. Extend it with a curated baseline.</h2>
+          <p class="section-lead">
+            Command Vault's SQL Server DBA Pack contains 97 curated commands and is designed to complement — not replace — the queries, standards, runbooks, and operational notes specific to your own SQL Server environment.
+          </p>
+        </div>
+        <div class="landing-card">
+          <strong>SQL Server DBA</strong>
+          <span>97 commands</span>
+          <span>$24.99</span>
+          <p>Command packs are separate products from Command Vault Pro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="wrap faq-wrap">
+        <p class="section-kicker">SQL SERVER DBA FAQ</p>
+        <h2>Common questions.</h2>
+        <div class="faq-grid">
+          <details class="faq-item"><summary>Can Command Vault store SQL Server and T-SQL commands?</summary><p>Yes. Command Vault can organize SQL Server and T-SQL command text with descriptions, categories, platform details, language metadata, tags, favorites, and operational notes.</p></details>
+          <details class="faq-item"><summary>Is Command Vault a SQL Server query execution tool?</summary><p>No. Command Vault is a command library and reference tool. Review and execute SQL Server commands in the appropriate database administration environment, such as SQL Server Management Studio or another trusted SQL client.</p></details>
+          <details class="faq-item"><summary>Where is my SQL Server command library stored?</summary><p>Command Vault stores its command library locally on your Windows computer using SQLite.</p></details>
+          <details class="faq-item"><summary>Do I need Pro to start organizing SQL Server commands?</summary><p>No. You can begin with Community and upgrade later when you need premium productivity, backup, and update-related features.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section landing-final">
+      <div class="wrap landing-final-inner">
+        <p class="section-kicker">START BUILDING YOUR LIBRARY</p>
+        <h2>Stop searching through old scripts for the same DBA commands.</h2>
+        <p class="section-lead">Download Command Vault for Windows x64 and begin organizing the SQL Server commands you already rely on.</p>
+        <div class="section-actions">
+          <a class="button primary landing-download"
+             href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">
+            Download Community
+          </a>
+          <a class="button secondary landing-pro" href="index.html#pricing">View Pro Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div>
+        <strong>Command Vault</strong>
+        <p>The IT Professional's Command Library</p>
+        <p class="footer-links">
+          <a href="index.html">Home</a><span>•</span>
+          <a href="privacy.html">Privacy</a><span>•</span>
+          <a href="terms.html">Terms</a><span>•</span>
+          <a href="refunds.html">Refunds &amp; Licensing</a><span>•</span>
+          <a href="support.html">Support</a>
+        </p>
+      </div>
+      <p>© 2026 Command Vault. Operated by M3 Marketplace LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.landing-download').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_download_click', {
+              landing_page: 'sql_server_dba',
+              link_url: link.href
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.landing-pro').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'landing_pro_click', {
+              landing_page: 'sql_server_dba',
+              destination: 'pricing'
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.faq-item').forEach(function (item) {
+        item.addEventListener('toggle', function () {
+          if (item.open && typeof gtag === 'function') {
+            const summary = item.querySelector('summary');
+            gtag('event', 'faq_engagement', {
+              page_topic: 'sql_server_dba',
+              faq_question: summary ? summary.textContent.trim() : 'unknown'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
