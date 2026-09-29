@@ -1,456 +1,310 @@
-<!doctype html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Command Vault is a local-first Windows command library for IT professionals. Organize, search, reuse, back up, and extend PowerShell, Cisco, SQL, Linux, PostgreSQL, and MongoDB commands.">
-  <meta name="theme-color" content="#071426">
-  <title>Command Vault — Local-First Command Library for IT Professionals</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFE3TDV91"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ZWFE3TDV91');
-  </script>
-
-  <link rel="canonical" href="https://commandvaultapp.com/">
-  <meta name="robots" content="index, follow">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Command Vault">
-  <meta property="og:title" content="Command Vault — Local-First Command Library for IT Professionals">
-  <meta property="og:description" content="Command Vault is a local-first Windows command library for IT professionals. Organize, search, reuse, back up, and extend PowerShell, Cisco, SQL, Linux, PostgreSQL, and MongoDB commands.">
-  <meta property="og:url" content="https://commandvaultapp.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Command Vault — Local-First Command Library for IT Professionals">
-  <meta name="twitter:description" content="Command Vault is a local-first Windows command library for IT professionals. Organize, search, reuse, back up, and extend PowerShell, Cisco, SQL, Linux, PostgreSQL, and MongoDB commands.">
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://commandvaultapp.com/#website",
-      "url": "https://commandvaultapp.com/",
-      "name": "Command Vault",
-      "description": "The IT Professional's Command Library",
-      "publisher": {
-        "@id": "https://commandvaultapp.com/#organization"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://commandvaultapp.com/#organization",
-      "name": "M3 Marketplace LLC",
-      "url": "https://commandvaultapp.com/",
-      "email": "support@commandvaultapp.com"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://commandvaultapp.com/#software",
-      "name": "Command Vault",
-      "url": "https://commandvaultapp.com/",
-      "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "Windows x64",
-      "softwareVersion": "1.1.0",
-      "description": "A local-first Windows command library for IT professionals to organize, search, reuse, back up, and extend technical commands.",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Command Vault Community",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Command Vault Pro Annual",
-          "price": "39.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://buy.stripe.com/9B6dR2ac5dOw6wjd5Eawo00"
-        },
-        {
-          "@type": "Offer",
-          "name": "Command Vault Pro Lifetime",
-          "price": "79.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://buy.stripe.com/5kQ3co6ZT11K7AnghQawo01"
-        }
-      ],
-      "publisher": {
-        "@id": "https://commandvaultapp.com/#organization"
-      }
-    }
-  ]
-}
-  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#06101f" name="theme-color"/>
+<meta content="Paddock Command is an independent race intelligence hub for Formula 1 standings, results, schedules, circuits, historical data, predictions and fan analysis." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://paddockcommand.com/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Paddock Command" property="og:site_name"/>
+<meta content="Paddock Command | Race Intelligence for Fans" property="og:title"/>
+<meta content="Paddock Command is an independent race intelligence hub for Formula 1 standings, results, schedules, circuits, historical data, predictions and fan analysis." property="og:description"/>
+<meta content="https://paddockcommand.com/" property="og:url"/>
+<meta content="https://paddockcommand.com/social-card.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Paddock Command | Race Intelligence for Fans" name="twitter:title"/>
+<meta content="Paddock Command is an independent race intelligence hub for Formula 1 standings, results, schedules, circuits, historical data, predictions and fan analysis." name="twitter:description"/>
+<meta content="https://paddockcommand.com/social-card.png" name="twitter:image"/>
+<meta content="Paddock Command" name="application-name"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<title>Paddock Command | Race Intelligence for Fans</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="icon-192.png" rel="apple-touch-icon"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link crossorigin="" href="https://api.jolpi.ca" rel="preconnect"/>
+<link crossorigin="" href="https://api.open-meteo.com" rel="preconnect"/>
+<link href="styles.css?v=2.5.0" rel="stylesheet"/>
+<script defer="" src="/newsletter-policy.js?v=1.0.0"></script><script referrerpolicy="origin" src="https://analytics.paddockcommand.com/cdn-cgi/zaraz/i.js"></script>
+<script defer="" src="/monetization-config.js?v=2.5.0"></script><script defer="" src="/monetization.js?v=2.5.0"></script><meta content="@PaddockCommand" name="twitter:site"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Paddock Command","url":"https://paddockcommand.com/","logo":"https://paddockcommand.com/social-profile.png","sameAs":["https://x.com/PaddockCommand","https://www.instagram.com/paddockcommand/","https://www.facebook.com/PaddockCommand","https://www.youtube.com/@PaddockCommand"]}</script>
+<style id="pc-approved-header-lockup">
+.pc-approved-brand{display:inline-flex!important;align-items:center!important;gap:11px!important;min-width:max-content!important;text-decoration:none!important;white-space:nowrap!important}
+.pc-approved-logo{display:block!important;width:42px!important;height:42px!important;min-width:42px!important;object-fit:contain!important;border:0!important;background:transparent!important;margin:0!important}
+.pc-approved-brand .brand-lockup{display:flex!important;flex-direction:column!important;line-height:.86!important}
+.pc-approved-brand .brand-lockup strong{font-size:.92rem!important;letter-spacing:.14em!important;color:#eef8ff!important;font-style:normal!important;font-weight:900!important;line-height:inherit!important;margin:0!important;padding:0!important}
+.pc-approved-brand .brand-lockup em{font-size:.68rem!important;letter-spacing:.24em!important;color:#60b8ff!important;font-style:normal!important;font-weight:950!important;margin-top:5px!important;line-height:inherit!important;padding:0!important}
+@media(max-width:900px){.pc-approved-brand .brand-lockup{display:none!important}}
+</style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="wrap nav-wrap">
-      <a class="brand" href="#top" aria-label="Command Vault home">
-        <span class="brand-mark">CV</span>
-        <span>Command Vault</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#licensing">How It Works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#packs">Command Packs</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">LOCAL-FIRST WINDOWS COMMAND LIBRARY</p>
-          <h1>Command Vault</h1>
-          <p class="hero-subtitle">The IT Professional's Command Library</p>
-          <p class="hero-copy">
-            Organize, search, edit, reuse, back up, and extend the commands you rely on every day —
-            with your library stored locally on your Windows PC.
-          </p>
-          <div class="hero-actions">
-            <a
-              class="button primary"
-              href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip"
-              aria-label="Download Command Vault 1.1.0 for Windows x64">
-              Download for Windows
-            </a>
-            <a class="button secondary" href="#pricing">View Pro Pricing</a>
-            <a class="button secondary" href="#features">Explore Features</a>
-          </div>
-          <p class="availability">
-            Command Vault 1.1.0 • Windows x64 • Pro licensing available now •
-            <a href="https://github.com/MrFrankRazr/CommandVault-Site/releases/tag/v1.1.0"
-               target="_blank"
-               rel="noopener noreferrer">Release notes</a>
-            •
-            <a href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64-SHA256.txt"
-               target="_blank"
-               rel="noopener noreferrer">SHA-256</a>
-          </p>
-          <div class="producthunt-badge" style="margin-top: 16px;">
-            <a class="producthunt-badge-link"
-               href="https://www.producthunt.com/products/command-vault?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-command-vault"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Find Command Vault on Product Hunt">
-              <img alt="Command Vault - The local-first command library for IT professionals | Product Hunt"
-                   width="250" height="54"
-                   style="max-width: 100%; height: auto; vertical-align: middle;"
-                   src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1256594&amp;theme=neutral&amp;t=1790646750193">
-            </a>
-          </div>
-        </div>
-
-        <aside class="product-card" aria-label="Command Vault product summary">
-          <div class="terminal-bar"><span></span><span></span><span></span></div>
-          <div class="terminal-content">
-            <p><span class="prompt">PS&gt;</span> Get-CommandVault</p>
-            <p class="terminal-accent">Fast search. Local storage. Professional command packs.</p>
-            <div class="terminal-rule"></div>
-            <p>Platform: Windows x64</p>
-            <p>Storage: Local SQLite</p>
-            <p>Edition: Community / Pro</p>
-            <p>License: Annual / Lifetime</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <div class="wrap">
-        <p class="section-kicker">BUILT FOR IT OPERATIONS</p>
-        <h2>One place for the commands you actually use.</h2>
-        <div class="feature-grid">
-          <article class="feature-card"><h3>Organize &amp; Search</h3><p>Store commands with categories, platforms, languages, tags, vendor details, descriptions, favorites, and usage history.</p></article>
-          <article class="feature-card"><h3>Local-First</h3><p>Your command library is stored locally on your computer. Command Vault does not require a cloud-hosted command database.</p></article>
-          <article class="feature-card"><h3>Templates</h3><p>Reuse parameterized commands with template variables and preview the completed command before use.</p></article>
-          <article class="feature-card"><h3>Import, Export &amp; Backup</h3><p>Move or protect your library with portable .cvault files and built-in manual backup workflows.</p></article>
-          <article class="feature-card"><h3>Professional Command Packs</h3><p>Extend Command Vault with curated libraries for networking, systems, databases, Linux, PowerShell, and MongoDB.</p></article>
-          <article class="feature-card"><h3>Theme Support</h3><p>Choose Light, Modern Blue, or Dark themes with a syntax-aware command editor powered by AvalonEdit.</p></article>
-          </div>
-        
-          <div class="section-actions">
-            <a class="button secondary content-guide-link"
-               href="how-to-build-it-command-library.html"
-               aria-label="Read the guide to building an IT command library">
-              Read: How to Build an IT Command Library
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="licensing" class="section licensing-section">
-      <div class="wrap">
-        <p class="section-kicker">SIMPLE LICENSING</p>
-        <h2>Start free. Upgrade when Pro makes sense.</h2>
-        <p class="section-lead">Command Vault is designed so you can install and use the Community edition first, then activate Pro with a signed license file when you are ready.</p>
-
-        <div class="steps-grid">
-          <article class="step-card"><span class="step-number">01</span><h3>Download Command Vault</h3><p>Download the current Windows x64 release and start with the Community edition.</p></article>
-          <article class="step-card"><span class="step-number">02</span><h3>Build Your Library</h3><p>Add, organize, search, tag, favorite, and reuse the commands you rely on.</p></article>
-          <article class="step-card"><span class="step-number">03</span><h3>Choose Pro</h3><p>Select Pro Annual for $39/year or Pro Lifetime for a $79 one-time purchase.</p></article>
-          <article class="step-card"><span class="step-number">04</span><h3>Receive Your License</h3><p>Your signed <code>.cvlicense</code> file is delivered by email after a successful purchase.</p></article>
-          <article class="step-card"><span class="step-number">05</span><h3>Activate in Settings</h3><p>Open <strong>Settings → License → Activate License</strong> and select the license file you received.</p></article>
-          <article class="step-card"><span class="step-number">06</span><h3>Keep Your Data Local</h3><p>Your command library remains stored on your own computer while Pro features are unlocked.</p></article>
-        </div>
-
-        <div class="section-actions">
-          <a class="button primary" href="https://github.com/MrFrankRazr/CommandVault-Site/releases/download/v1.1.0/CommandVault-1.1.0-win-x64.zip">Download Community</a>
-          <a class="button secondary" href="#pricing">Compare Pro Options</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" class="section pricing-section">
-      <div class="wrap">
-        <p class="section-kicker">COMMAND VAULT PRO</p>
-        <h2>Upgrade when you need more.</h2>
-        <p class="section-lead">The core command library remains useful in Community. Pro adds premium productivity, protection, and ongoing value.</p>
-
-        <div class="pricing-grid">
-          <article class="price-card">
-            <p class="price-label">PRO ANNUAL</p>
-            <div class="price"><span>$39</span><small>/ year</small></div>
-            <ul>
-              <li>Pro feature access for one year</li>
-              <li>Command Pack updates</li>
-              <li>Automatic backup features as available</li>
-              <li>Advanced backup retention</li>
-              <li>Future Pro productivity features</li>
-            </ul>
-            <a
-              class="button primary"
-              href="https://buy.stripe.com/9B6dR2ac5dOw6wjd5Eawo00"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Purchase Command Vault Pro Annual for $39 per year">
-              Purchase Pro Annual
-            </a>
-          </article>
-
-          <article class="price-card featured">
-            <p class="badge">BEST LONG-TERM VALUE</p>
-            <p class="price-label">PRO LIFETIME</p>
-            <div class="price"><span>$79</span><small>one-time</small></div>
-            <ul>
-              <li>Lifetime Pro access for the licensed product</li>
-              <li>Command Pack updates</li>
-              <li>Automatic backup features as available</li>
-              <li>Advanced backup retention</li>
-              <li>No recurring subscription</li>
-            </ul>
-            <a
-              class="button primary"
-              href="https://buy.stripe.com/5kQ3co6ZT11K7AnghQawo01"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Purchase Command Vault Pro Lifetime for $79">
-              Purchase Pro Lifetime
-            </a>
-          </article>
-        </div>
-
-        <p class="pricing-note">Command packs are sold separately. Team and Enterprise licensing are planned for a later phase.</p>
-      </div>
-    </section>
-
-    <section id="packs" class="section">
-      <div class="wrap">
-        <p class="section-kicker">PROFESSIONAL CONTENT</p>
-        <h2>Command Packs</h2>
-        <p class="section-lead">Curated libraries designed to give IT professionals a strong starting point without replacing their own command collection.</p>
-
-        <div class="pack-grid">
-          <a class="pack pack-link"
-             href="cisco-ios-command-library.html"
-             aria-label="Explore the Cisco Network Administrator command library">
-            <strong>Cisco Network Administrator</strong>
-            <span>97 commands • $19.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="powershell-command-library.html"
-             aria-label="Explore the PowerShell Administrator command library">
-            <strong>PowerShell Administrator</strong>
-            <span>97 commands • $19.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="sql-server-dba-command-library.html"
-             aria-label="Explore the SQL Server DBA command library">
-            <strong>SQL Server DBA</strong>
-            <span>97 commands • $24.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="postgresql-dba-command-library.html"
-             aria-label="Explore the PostgreSQL DBA command library">
-            <strong>PostgreSQL DBA</strong>
-            <span>97 commands • $24.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="linux-admin-command-library.html"
-             aria-label="Explore the Linux Administrator command library">
-            <strong>Linux Administrator</strong>
-            <span>97 commands • $19.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="mongodb-admin-command-library.html"
-             aria-label="Explore the MongoDB Administrator command library">
-            <strong>MongoDB Administrator</strong>
-            <span>97 commands • $19.99</span>
-          </a>
-          <a class="pack pack-link"
-             href="ultimate-it-admin-command-library.html"
-             aria-label="Explore the Ultimate IT Administrator command library">
-            <strong>Ultimate IT Administrator</strong>
-            <span>582 commands • $69.99</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="faq" class="section faq-section">
-      <div class="wrap faq-wrap">
-        <p class="section-kicker">QUESTIONS BEFORE YOU DOWNLOAD?</p>
-        <h2>Frequently asked questions.</h2>
-
-        <div class="faq-grid">
-          <details class="faq-item"><summary>What is the difference between Community and Pro?</summary><p>Community provides the core command-library experience. Pro adds premium productivity, protection, and update-related features such as automatic backup capabilities, advanced backup retention, and Command Pack updates.</p></details>
-          <details class="faq-item"><summary>Do I need to purchase Pro before downloading Command Vault?</summary><p>No. Download Command Vault and start with Community. You can upgrade to Pro later without rebuilding your command library.</p></details>
-          <details class="faq-item"><summary>Where is my command library stored?</summary><p>Command Vault stores your library locally on your Windows computer using SQLite. Your normal command-library workflow does not require a cloud-hosted command database.</p></details>
-          <details class="faq-item"><summary>Does Command Vault require an internet connection?</summary><p>The desktop command library is local-first. Internet access is needed for activities such as downloading releases, purchasing a license, receiving license email, and accessing online support or updates.</p></details>
-          <details class="faq-item"><summary>How do I activate Pro?</summary><p>After purchasing Pro, you receive a signed <code>.cvlicense</code> file by email. In Command Vault, open <strong>Settings → License → Activate License</strong> and select that file.</p></details>
-          <details class="faq-item"><summary>What is the difference between Annual and Lifetime Pro?</summary><p>Pro Annual is $39 per year. Pro Lifetime is a $79 one-time purchase for the licensed Command Vault product and does not require a recurring subscription.</p></details>
-          <details class="faq-item"><summary>Are Command Packs included with Pro?</summary><p>Command Packs are separate products. Pro enables Pack Updates and other Pro capabilities, but individually priced packs are purchased separately unless a specific offer says otherwise.</p></details>
-          <details class="faq-item"><summary>What Windows version does Command Vault support?</summary><p>The current release is distributed for Windows x64 and is published as a self-contained application, so a separate .NET installation is not required.</p></details>
-          <details class="faq-item"><summary>Can I verify the download?</summary><p>Yes. Each public release includes a SHA-256 checksum so you can verify the downloaded ZIP against the published release file.</p></details>
-          <details class="faq-item"><summary>Where do I get support?</summary><p>Email <a href="mailto:support@commandvaultapp.com">support@commandvaultapp.com</a> or visit the <a href="support.html">Support page</a>.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section security-section">
-      <div class="wrap security-grid">
-        <div>
-          <p class="section-kicker">LOCAL BY DESIGN</p>
-          <h2>Your commands stay on your computer.</h2>
-        </div>
-        <p>Command Vault uses a local SQLite library and signed license files. The desktop application does not require a cloud-hosted command database to organize and use your personal command library.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-wrap">
-      <div>
-        <strong>Command Vault</strong>
-        <p>The IT Professional's Command Library</p>
-        <p class="footer-links">
-          <a href="privacy.html">Privacy</a>
-          <span>•</span>
-          <a href="terms.html">Terms</a>
-          <span>•</span>
-          <a href="refunds.html">Refunds &amp; Licensing</a>
-          <span>•</span>
-          <a href="support.html">Support</a>
-        </p>
-      </div>
-      <p>© 2026 Command Vault. Operated by M3 Marketplace LLC. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      function track(eventName, params) {
-        if (typeof gtag === 'function') {
-          gtag('event', eventName, params || {});
-        }
-      }
-
-      document.querySelectorAll('a[href*="CommandVault-1.1.0-win-x64.zip"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('download_windows_click', {
-            link_url: link.href,
-            link_text: link.textContent.trim(),
-            placement: link.closest('.hero') ? 'hero' : 'licensing'
-          });
-        });
-      });
-
-      document.querySelectorAll('a[href*="/releases/tag/v1.1.0"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('release_notes_click', { link_url: link.href });
-        });
-      });
-
-      document.querySelectorAll('a[href*="CommandVault-1.1.0-win-x64-SHA256.txt"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('sha256_click', { link_url: link.href });
-        });
-      });
-
-      document.querySelectorAll('a[href="https://buy.stripe.com/9B6dR2ac5dOw6wjd5Eawo00"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('pro_annual_click', {
-            value: 39,
-            currency: 'USD',
-            destination: 'stripe'
-          });
-        });
-      });
-
-      document.querySelectorAll('a[href="https://buy.stripe.com/5kQ3co6ZT11K7AnghQawo01"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('pro_lifetime_click', {
-            value: 79,
-            currency: 'USD',
-            destination: 'stripe'
-          });
-        });
-      });
-
-      document.querySelectorAll('a[href="support.html"], a[href="mailto:support@commandvaultapp.com"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('support_click', {
-            link_url: link.getAttribute('href'),
-            link_text: link.textContent.trim()
-          });
-        });
-      });
-
-      document.querySelectorAll('.producthunt-badge-link').forEach(function (link) {
-        link.addEventListener('click', function () {
-          track('producthunt_badge_click', {
-            link_url: link.href,
-            placement: 'homepage_hero'
-          });
-        });
-      });
-
-      document.querySelectorAll('.faq-item').forEach(function (item) {
-        item.addEventListener('toggle', function () {
-          if (item.open) {
-            const summary = item.querySelector('summary');
-            track('faq_engagement', {
-              faq_question: summary ? summary.textContent.trim() : 'unknown'
-            });
-          }
-        });
-      });
-    });
-  </script>
-
+<body data-initial-view="home">
+<a class="skip-link" href="#mainContent">Skip to main content</a>
+<div aria-hidden="true" class="noise"></div>
+<header class="site-header">
+<a aria-label="Paddock Command home" class="brand brand-v2 pc-approved-brand" href="/">
+<img alt="" aria-hidden="true" class="pc-approved-logo" height="42" src="/logo.svg?v=20260914-approved" width="42"/>
+<span class="brand-lockup"><strong>PADDOCK</strong><em>COMMAND</em></span>
+</a>
+<nav aria-label="Primary navigation" class="nav"><a class="nav-link active" data-view="home" href="/">Race Control</a><a class="nav-link" data-view="live" href="/race-weekend.html">Live Center</a><a class="nav-link" data-view="news" href="/news.html">News</a><a class="nav-link nav-external" href="/articles.html">Articles</a><a class="nav-link" data-view="drivers" href="/drivers.html">Drivers</a><a class="nav-link" data-view="teams" href="/constructors.html">Constructors</a><a class="nav-link" data-view="form" href="/form.html">Form</a><a class="nav-link" data-view="trends" href="/trends.html">Trends</a><a class="nav-link" data-view="compare" href="/compare.html">Compare</a><a class="nav-link" data-view="scenario" href="/scenario.html">Scenario</a><a class="nav-link" data-view="myf1" href="/my-paddock.html">My Paddock</a><a class="nav-link" data-view="records" href="/records.html">Records</a><a class="nav-link" data-view="predictor" href="/predictions.html">Fan Picks</a><a class="nav-link" data-view="winners" href="/winners.html">Winners</a><a class="nav-link" data-view="calendar" href="/calendar.html">Calendar</a><a class="nav-link" data-view="circuits" href="/circuits.html">Circuits</a></nav>
+<div class="header-controls">
+<button aria-label="Install Paddock Command app" class="install-btn" hidden="" id="installAppBtn" type="button">Install App</button>
+<label class="season-control" for="seasonSelect"><span>Season</span><select aria-label="Select Formula 1 season" id="seasonSelect"></select></label>
+<div class="live-status" title="Data refresh status">
+<span class="status-dot" id="statusDot"></span>
+<span id="statusText">Connecting</span>
+</div>
+</div>
+</header>
+<main id="mainContent">
+<section class="hero view active" data-view-panel="home" id="view-home">
+<div class="hero-grid">
+<div>
+<p class="eyebrow"><span id="seasonLabel">CURRENT SEASON</span> · PADDOCK COMMAND</p>
+<h1>RACE INTELLIGENCE.<br/><span>COMMAND THE GRID.</span></h1>
+<p class="hero-copy">Live race-weekend context, championship data, historical intelligence, fan predictions and every circuit on the calendar — built for people who follow every lap.</p>
+<div class="hero-actions">
+<button class="primary-btn" data-jump="drivers">View Standings</button>
+<button class="ghost-btn" id="refreshBtn">Refresh Data</button>
+</div>
+</div>
+<aside class="next-race-card" id="nextRaceCard">
+<div class="skeleton tall"></div>
+</aside>
+</div>
+<div class="stat-strip" id="leaderStrip">
+<div class="mini-stat skeleton"></div><div class="mini-stat skeleton"></div><div class="mini-stat skeleton"></div><div class="mini-stat skeleton"></div>
+</div>
+<div class="section-head">
+<div><p class="eyebrow">CHAMPIONSHIP SNAPSHOT</p><h2>Front of the field</h2></div>
+<button class="text-btn" data-jump="drivers">Full standings →</button>
+</div>
+<div class="dashboard-grid">
+<div class="panel"><div class="panel-head"><h3>Drivers</h3><span>Top 5</span></div><div id="homeDrivers"></div></div>
+<div class="panel"><div class="panel-head"><h3>Constructors</h3><span>Top 5</span></div><div id="homeTeams"></div></div>
+</div>
+<section aria-labelledby="briefingTitle" class="editorial-briefing">
+<div class="section-head editorial-head">
+<div><p class="eyebrow">PADDOCK BRIEFING</p><h2 id="briefingTitle">Race intelligence beyond the tables</h2></div>
+<a class="text-btn editorial-all" href="/articles.html">All articles →</a>
+</div>
+<div class="editorial-card-grid">
+<a class="editorial-card" href="/fernando-alonso-aston-martin-2027.html"><small>BREAKING · DRIVER MARKET · SEP 29</small><h3>Alonso Stays: Aston Martin Confirms 2027 Lineup</h3><p>Fernando Alonso extends his Formula 1 career alongside Lance Stroll as Aston Martin commits to continuity through its recovery.</p><span>Read the breaking story →</span></a><a class="editorial-card" href="/ferrari-backs-vasseur-horner-speculation-2026.html"><small>FERRARI · TEAM INTELLIGENCE · SEP 29</small><h3>Ferrari Backs Vasseur Amid Horner Speculation</h3><p>Ferrari publicly reaffirms its confidence in Fred Vasseur as attention turns from leadership speculation to its Sepang performance challenge.</p><span>Read Ferrari Intelligence →</span></a><a class="editorial-card" href="/sergio-perez-2026-f1-speed-differential-safety.html"><small>TECHNICAL WATCH · SAFETY · SEP 29</small><h3>Pérez Raises 2026 F1 Closing-Speed Concern</h3><p>After a near miss with Lawson in Baku, Pérez warns that differences in energy deployment can create dangerous closing speeds.</p><span>Read Technical Intelligence →</span></a>
+<a class="editorial-card featured" href="/2026-sepang-circuit-intelligence.html"><small>CIRCUIT INTELLIGENCE · SEPANG · SEP 28</small><h3>Nine Years Later, Sepang Is a Strategic Unknown</h3><p>Pirelli’s C2/C3/C4 selection, abrasive asphalt and tropical conditions make one-stop versus two-stop strategy an early race-week question.</p><span>Enter Circuit Intelligence →</span></a><a class="editorial-card" href="/2026-bahrain-grand-prix-malaysia-sepang-preview.html"><small>NEXT RACE · SEPANG · OCT 2–4</small><h3>F1 Returns to Sepang — Bahrain GP in Malaysia Explained</h3><p>Formula 1 returns to Malaysia after nine years. Explore the unusual venue arrangement, official schedule, circuit demands and championship stakes.</p><span>Explore Sepang →</span></a><a class="editorial-card" href="/2026-azerbaijan-grand-prix-debrief.html"><small>AZERBAIJAN GP · RACE DEBRIEF · SEP 26</small><h3>Russell Wins Baku Thriller — Title Gap Falls to 66</h3><p>Russell holds off Verstappen by 0.196 seconds, Hadjar takes a comeback podium, and Antonelli recovers from P16 to P5 to protect his championship lead.</p><span>Read Azerbaijan GP Debrief →</span></a><a class="editorial-card" href="/2026-championship-watch-after-dutch-gp.html"><small>CHAMPIONSHIP WATCH · AFTER BAKU</small><h3>Russell Cuts Antonelli’s Lead to 66 Points</h3><p>Antonelli 302 · Russell 236. Russell gained 15 points with his Baku victory; Antonelli recovered to fifth from 16th.</p><span>Read Championship Watch →</span></a><a class="editorial-card" href="/2026-azerbaijan-gp-thursday-practice-intelligence.html"><small>THURSDAY PRACTICE · SEP 24</small><h3>Russell Sweeps Thursday Practice</h3><p>The Mercedes benchmark from Thursday set up Russell’s dominant Friday pole. Review the FP1/FP2 data and technical watch points.</p><span>Read Thursday Practice Intelligence →</span></a><a class="editorial-card" href="/race-weekend.html"><small>BAKU UPGRADE WATCH · SEP 18</small><h3>Williams Brings Its Biggest 2026 Upgrade</h3><p>The long-awaited FW48 package arrives in Azerbaijan as Williams tries to recover enough performance to fight for points — and validate its development direction before attention turns fully to 2027.</p><span>Track the Baku Intelligence →</span></a><a class="editorial-card" href="/2027-f1-shorter-races-rule-changes.html"><small>F1 2027 · RULES INTELLIGENCE</small><h3>F1 Will Shorten Grand Prix Distances in 2027</h3><p>The standard race distance is set to fall from 305km to 290km, while disrupted-race limits, practice extensions and gearbox rules are also changing.</p><span>Explore the 2027 Rule Changes →</span></a></div></section>
+<div aria-label="Advertisement" class="monetization-slot monetization-inline" data-ad-slot="home-content" hidden=""></div>
+<div class="section-head recent-head">
+<div><p class="eyebrow">LAST TIME OUT</p><h2>Latest race podium</h2></div>
+<button class="text-btn" data-jump="winners">Season winners →</button>
+</div>
+<div class="podium-wrap" id="latestPodium"><div class="skeleton tall"></div></div>
+</section>
+<section class="view content-view live-center-view" data-view-panel="live" id="view-live">
+<div class="page-title live-center-title"><div><p class="eyebrow">RACE WEEKEND COMMAND</p><h1>Live Race Weekend Center</h1><p class="page-subtitle">Session clock, latest published classifications, circuit context and weather in one race-weekend view.</p></div><span class="season-chip" id="liveSeasonChip"></span></div>
+<div class="live-center-hero" id="liveCenterHero"><div class="skeleton tall"></div></div>
+<div class="live-center-grid">
+<section class="analytics-panel live-session-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">SESSION CLOCK</p><h2>Weekend timeline</h2></div><button class="text-btn" id="liveCenterRefresh" type="button">Refresh center</button></div><div id="liveSessionTimeline"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel weather-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">TRACK WEATHER</p><h2>Weekend conditions</h2></div></div><div id="liveWeather"><div class="skeleton tall"></div></div></section>
+</div>
+<div class="live-center-grid lower">
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">LATEST PUBLISHED DATA</p><h2>Classification</h2></div></div><div id="liveClassification"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">WEEKEND STORY</p><h2>What matters now</h2></div></div><div id="liveWeekendStory"><div class="skeleton tall"></div></div></section>
+</div>
+<section class="commerce-module travel-commerce" data-commerce-module="" hidden="">
+<div><p class="eyebrow">RACE WEEKEND TRAVEL · AFFILIATE</p><h2>Going to the race?</h2><p class="commercial-disclosure">Search hotels and travel options with Expedia. Paddock Command may earn a commission from qualifying bookings at no additional cost to you. <a href="/disclosures.html">Affiliate disclosure.</a></p></div>
+<div class="commerce-grid"><a class="commerce-card" data-affiliate-key="expediaTravel" data-placement="live-center-travel" hidden=""><small>EXPEDIA TRAVEL PARTNER</small><strong>Plan your race-weekend trip</strong><span>Search hotels, flights and travel options for your Grand Prix weekend →</span></a></div>
+</section>
+<p class="live-data-note">Paddock Command shows the latest classifications published by Jolpica. It does not claim to provide official real-time lap timing or telemetry.</p>
+</section>
+<section class="view content-view" data-view-panel="news" id="view-news">
+<div class="page-title"><div><p class="eyebrow">PADDOCK WIRE</p><h1>F1 News &amp; Headlines</h1><p class="page-subtitle">Fresh Formula 1 headlines with direct links to the original publisher. News stays current regardless of the historical season selector.</p></div><span class="season-chip">LIVE NEWS</span></div>
+<section class="news-source-bar">
+<div><strong>Latest paddock coverage</strong><span id="newsUpdated">Loading headlines…</span></div>
+<div class="news-source-links"><a href="https://www.formula1.com/en/latest" rel="noopener" target="_blank">Formula1.com ↗</a><a href="https://www.fia.com/media-center/press_release/name/F1" rel="noopener" target="_blank">FIA F1 releases ↗</a><button class="ghost-btn small" id="newsRefresh" type="button">Refresh news</button></div>
+</section>
+<div class="news-grid" id="newsGrid"><div class="skeleton tall"></div><div class="skeleton tall"></div><div class="skeleton tall"></div></div>
+<p class="intel-note">Headline feed is loaded independently from championship data. If the news provider is unavailable, the rest of Paddock Command remains fully functional.</p>
+</section>
+<section class="view content-view" data-view-panel="form" id="view-form">
+<div class="page-title"><div><p class="eyebrow">MOMENTUM WATCH</p><h1>Form, Streaks &amp; Milestones</h1><p class="page-subtitle">See who is hot, which teams are gaining momentum, and the season milestones reached round by round.</p></div><span class="season-chip" id="formSeasonChip"></span></div>
+<div class="form-hero-grid" id="formHero"><div class="skeleton tall"></div></div>
+<div class="form-layout">
+<section class="analytics-panel form-driver-panel"><div class="analytics-panel-head"><div><p class="eyebrow">LAST FIVE ROUNDS</p><h2>Driver form guide</h2><p>Recent Grand Prix finishing positions with race + sprint points across the last five completed rounds.</p></div></div><div id="driverFormGuide"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">CONSTRUCTOR MOMENTUM</p><h2>Team form</h2></div></div><div class="leaderboard-list" id="teamFormLeaders"><div class="skeleton tall"></div></div></section>
+</div>
+<section class="analytics-panel milestone-feed-panel"><div class="analytics-panel-head"><div><p class="eyebrow">SEASON MARKERS</p><h2>Recent milestones</h2><p>Notable firsts and threshold achievements detected from the selected season results.</p></div></div><div class="form-milestone-feed" id="formMilestones"><div class="skeleton tall"></div></div></section>
+</section>
+<section class="view content-view" data-view-panel="drivers" id="view-drivers">
+<div class="page-title"><div><p class="eyebrow">WORLD CHAMPIONSHIP</p><h1>Driver Standings</h1></div><span class="season-chip" id="driverSeasonChip"></span></div>
+<div class="table-shell"><div class="data-table" id="driverTable"><div class="skeleton tall"></div></div></div>
+</section>
+<section class="view content-view" data-view-panel="teams" id="view-teams">
+<div class="page-title"><div><p class="eyebrow">CONSTRUCTOR BATTLE</p><h1>Team Standings</h1></div><span class="season-chip" id="teamSeasonChip"></span></div>
+<div class="team-grid" id="teamCards"><div class="skeleton tall"></div></div>
+</section>
+<section class="view content-view" data-view-panel="trends" id="view-trends">
+<div class="page-title"><div><p class="eyebrow">SEASON INTELLIGENCE</p><h1>Championship Trends</h1></div><span class="season-chip" id="trendSeasonChip"></span></div>
+<div class="analytics-hero-grid" id="seasonLeaderCards">
+<div class="skeleton tall"></div>
+</div>
+<section class="analytics-panel trend-panel">
+<div class="analytics-panel-head">
+<div><p class="eyebrow">POINTS PROGRESSION</p><h2>Championship battle by round</h2><p>Race + sprint points accumulated through each completed round.</p></div>
+<div aria-label="Championship trend type" class="trend-toggle" role="group">
+<button class="analytics-toggle active" data-trend-type="drivers" type="button">Drivers</button>
+<button class="analytics-toggle" data-trend-type="constructors" type="button">Constructors</button>
+</div>
+</div>
+<div class="trend-legend" id="trendLegend"></div>
+<div class="trend-chart-shell" id="trendChart"><div class="skeleton tall"></div></div>
+</section>
+<div class="analytics-grid">
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ONE-LAP PACE</p><h2>Poles</h2></div></div><div class="leaderboard-list" id="poleLeaders"></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">RACE PACE</p><h2>Fastest Laps</h2></div></div><div class="leaderboard-list" id="fastestLapLeaders"></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">CONSISTENCY</p><h2>Podiums</h2></div></div><div class="leaderboard-list" id="podiumLeaders"></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">MOMENTUM</p><h2>Last 5 Rounds</h2></div></div><div class="leaderboard-list" id="formLeaders"></div></section>
+</div>
+</section>
+<section class="view content-view" data-view-panel="compare" id="view-compare">
+<div class="page-title"><div><p class="eyebrow">HEAD-TO-HEAD</p><h1>Compare the Grid</h1><p class="page-subtitle">Put two drivers or constructors side by side across the selected season.</p></div><span class="season-chip" id="compareSeasonChip"></span></div>
+<section class="analytics-panel compare-control-panel">
+<div class="compare-toolbar">
+<div class="compare-toolbar-actions">
+<div aria-label="Comparison type" class="trend-toggle" role="group">
+<button class="analytics-toggle active" data-compare-type="drivers" type="button">Drivers</button>
+<button class="analytics-toggle" data-compare-type="constructors" type="button">Constructors</button>
+</div>
+<button class="share-btn" data-share-compare="" type="button">Share comparison card</button>
+</div>
+<div class="compare-selectors">
+<label><span>Competitor A</span><select aria-label="Select first competitor" id="compareSelectA"></select></label>
+<div class="versus-badge">VS</div>
+<label><span>Competitor B</span><select aria-label="Select second competitor" id="compareSelectB"></select></label>
+</div>
+</div>
+</section>
+<div class="compare-hero" id="compareHero"><div class="skeleton tall"></div></div>
+<div class="compare-stat-grid" id="compareStats"><div class="skeleton tall"></div></div>
+<section class="analytics-panel compare-round-panel">
+<div class="analytics-panel-head"><div><p class="eyebrow">ROUND BY ROUND</p><h2>Season battle</h2><p>Race finishes and points for both competitors across completed Grands Prix.</p></div></div>
+<div class="compare-rounds" id="compareRounds"><div class="skeleton tall"></div></div>
+</section>
+</section>
+<section class="view content-view" data-view-panel="scenario" id="view-scenario">
+<div class="page-title"><div><p class="eyebrow">TITLE FIGHT LAB</p><h1>Championship Scenario Calculator</h1><p class="page-subtitle">Set hypothetical race and sprint finishes, then see how the selected season standings would move.</p></div><span class="season-chip" id="scenarioSeasonChip"></span></div>
+<div class="scenario-layout">
+<section class="analytics-panel scenario-control-panel">
+<div class="analytics-panel-head"><div><p class="eyebrow">SCENARIO SETUP</p><h2>Build the next result</h2><p id="scenarioRaceLabel">Select competitors and finishing positions.</p></div><button class="ghost-btn small" id="scenarioReset" type="button">Reset</button></div>
+<div class="scenario-fields">
+<label><span>Driver A</span><select id="scenarioDriverA"></select></label>
+<label><span>Race finish</span><select id="scenarioRaceA"></select></label>
+<label class="scenario-sprint-field"><span>Sprint finish</span><select id="scenarioSprintA"></select></label>
+<label><span>Driver B</span><select id="scenarioDriverB"></select></label>
+<label><span>Race finish</span><select id="scenarioRaceB"></select></label>
+<label class="scenario-sprint-field"><span>Sprint finish</span><select id="scenarioSprintB"></select></label>
+</div>
+<p class="intel-note" id="scenarioRuleNote"></p>
+</section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">PROJECTED ORDER</p><h2>Championship impact</h2></div></div><div id="scenarioResults"><div class="skeleton tall"></div></div></section>
+</div>
+</section>
+<section class="view content-view" data-view-panel="myf1" id="view-myf1">
+<div class="page-title"><div><p class="eyebrow">YOUR PADDOCK</p><h1>My Paddock</h1><p class="page-subtitle">Pin favorite drivers, constructors and circuits to your personal command board. Favorites stay on this device in your browser.</p></div><span class="season-chip" id="myf1SeasonChip"></span></div>
+<section class="analytics-panel favorites-add-panel">
+<div class="favorites-add-grid">
+<label><span>Add driver</span><div><select id="favoriteDriverSelect"></select><button data-add-favorite="driver" type="button">Pin</button></div></label>
+<label><span>Add constructor</span><div><select id="favoriteTeamSelect"></select><button data-add-favorite="constructor" type="button">Pin</button></div></label>
+<label><span>Add circuit</span><div><select id="favoriteCircuitSelect"></select><button data-add-favorite="circuit" type="button">Pin</button></div></label>
+</div>
+</section>
+<div class="myf1-grid" id="myF1Dashboard"><div class="skeleton tall"></div></div>
+</section>
+<section class="view content-view" data-view-panel="records" id="view-records">
+<div class="page-title"><div><p class="eyebrow">HALL OF SPEED</p><h1>Formula Racing Records &amp; Milestones</h1><p class="page-subtitle">Explore Formula 1's all-time leaders, championship dynasties and selected-season milestones.</p></div><span class="season-chip" id="recordsSeasonChip"></span></div>
+<div class="records-hero" id="recordsHero"><div class="skeleton tall"></div></div>
+<div class="records-grid">
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Grand Prix Wins</h2></div></div><div class="leaderboard-list" id="recordWins"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Podiums</h2></div></div><div class="leaderboard-list" id="recordPodiums"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Pole Positions</h2></div></div><div class="leaderboard-list" id="recordPoles"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Drivers' Titles</h2></div></div><div class="leaderboard-list" id="recordDriverTitles"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Constructor Wins</h2></div></div><div class="leaderboard-list" id="recordTeamWins"><div class="skeleton tall"></div></div></section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">ALL-TIME</p><h2>Constructors' Titles</h2></div></div><div class="leaderboard-list" id="recordTeamTitles"><div class="skeleton tall"></div></div></section>
+</div>
+<section class="analytics-panel records-milestones"><div class="analytics-panel-head"><div><p class="eyebrow">SELECTED SEASON</p><h2 id="milestoneTitle">Season milestones</h2><p>Leader snapshots derived from the season currently selected in Paddock Command.</p></div></div><div class="milestone-grid" id="seasonMilestones"></div></section>
+<p class="intel-note">All-time record leaderboards use a verified snapshot dated Aug 26, 2026 for reliability; selected-season milestones continue to update from the live Jolpica/Ergast-compatible data service.</p>
+</section>
+<section class="view content-view" data-view-panel="predictor" id="view-predictor">
+<div class="page-title"><div><p class="eyebrow">CALL THE PODIUM</p><h1>Race Predictor &amp; Fan Picks</h1><p class="page-subtitle">Pick the podium before lights out, save it on this device, then return after the race to see your score.</p></div><span class="season-chip" id="predictorSeasonChip"></span></div>
+<div class="predictor-layout">
+<section class="analytics-panel predictor-card">
+<div class="analytics-panel-head" id="predictorRaceHead"><div><p class="eyebrow">NEXT GRAND PRIX</p><h2>Loading race…</h2></div></div>
+<div class="predictor-form" id="predictorForm"><div class="skeleton tall"></div></div>
+</section>
+<section class="analytics-panel"><div class="analytics-panel-head compact"><div><p class="eyebrow">YOUR RECORD</p><h2>Prediction scorecard</h2></div></div><div id="predictorScorecard"></div></section>
+</div>
+<section class="analytics-panel predictor-history-panel"><div class="analytics-panel-head"><div><p class="eyebrow">SEASON LOG</p><h2>Fan Picks History</h2><p>Saved locally in this browser. Scored automatically when official race classifications are published.</p></div></div><div class="predictor-history" id="predictorHistory"></div></section>
+</section>
+<section class="view content-view" data-view-panel="winners" id="view-winners">
+<div class="page-title"><div><p class="eyebrow">VICTORY LANE</p><h1>Race Winners</h1></div><span class="season-chip" id="winnerSeasonChip"></span></div>
+<div class="winner-grid" id="winnerGrid"><div class="skeleton tall"></div></div>
+</section>
+<section class="view content-view" data-view-panel="calendar" id="view-calendar">
+<div class="page-title"><div><p class="eyebrow">AROUND THE WORLD</p><h1>Race Calendar &amp; Venues</h1></div><span class="season-chip" id="calendarSeasonChip"></span></div>
+<div class="calendar-tools"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="upcoming">Upcoming</button><button class="filter-btn" data-filter="completed">Completed</button></div>
+<div class="calendar-grid" id="calendarGrid"><div class="skeleton tall"></div></div>
+</section>
+<section class="view content-view" data-view-panel="circuits" id="view-circuits">
+<div class="page-title"><div><p class="eyebrow">TRACK INTELLIGENCE</p><h1>Circuits</h1></div><span class="season-chip" id="circuitSeasonChip"></span></div>
+<div class="circuit-intro"><p>Explore every venue on the selected season calendar. Open Circuit Intel for historical Grand Prix count, first appearance, fastest recorded race lap, and derived track/race distance where data is available.</p></div>
+<section class="commerce-module travel-commerce" data-commerce-module="" hidden="">
+<div><p class="eyebrow">TRACKSIDE TRAVEL · AFFILIATE</p><h2>Turn circuit research into a trip</h2><p class="commercial-disclosure">Planning to attend a Grand Prix? Search travel and accommodation with Expedia. Paddock Command may earn a commission from qualifying bookings at no additional cost to you. <a href="/disclosures.html">Affiliate disclosure.</a></p></div>
+<div class="commerce-grid"><a class="commerce-card" data-affiliate-key="expediaTravel" data-placement="circuits-travel" hidden=""><small>EXPEDIA TRAVEL PARTNER</small><strong>Search race-weekend travel</strong><span>Explore hotels, flights and other travel options for your next circuit visit →</span></a></div>
+</section>
+<div class="circuit-grid" id="circuitGrid"><div class="skeleton tall"></div></div>
+</section>
+<section aria-labelledby="newsletterTitle" class="editorial-briefing" data-newsletter-static="">
+<div class="section-head editorial-head">
+<div><p class="eyebrow">PADDOCK COMMAND NEWSLETTER</p><h2 id="newsletterTitle">Race Weekend Briefing</h2><p>Get the key Formula 1 storylines, championship context and Paddock Command race intelligence delivered before the action matters most.</p></div>
+<a class="primary-btn" href="/newsletter.html">Join the Newsletter →</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-brand"><strong>PADDOCK COMMAND</strong><span>Race intelligence. Championship data. Built for fans.</span></div>
+<nav aria-label="Explore Paddock Command" class="footer-links"><a href="standings.html">Standings</a><a href="drivers.html">Drivers</a><a href="constructors.html">Constructors</a><a href="calendar.html">Calendar</a><a href="circuits.html">Circuits</a><a href="records.html">Records</a><a href="articles.html">Articles</a><a href="/newsletter.html">Newsletter</a></nav>
+<nav aria-label="Site information" class="footer-links"><a href="about.html">About</a><a href="data-sources.html">Data Sources</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclosures.html">Disclosures</a><a href="contact.html">Contact</a></nav><nav aria-label="Follow Paddock Command" class="footer-links social-links"><a href="https://x.com/PaddockCommand" rel="me noopener" target="_blank">X</a><a href="https://www.instagram.com/paddockcommand/" rel="me noopener" target="_blank">Instagram</a><a href="https://www.facebook.com/PaddockCommand" rel="me noopener" target="_blank">Facebook</a><a href="https://www.youtube.com/@PaddockCommand" rel="me noopener" target="_blank">YouTube</a></nav>
+<p class="independent-disclaimer">Paddock Command is an unofficial, independent motorsport fan site. It is not affiliated with, endorsed by, or connected to Formula 1, the FIA, any team, driver, or rights holder. Formula 1 and related marks belong to their respective owners.</p>
+<div class="footer-meta"><span>Data services include Jolpica, Open-Meteo and linked news publishers.</span><span id="lastUpdated">Waiting for data…</span></div>
+<div aria-hidden="true" class="monetization-slot" data-ad-slot="footer"></div>
+<p class="copyright">© <span id="copyrightYear">2026</span> Paddock Command. All site branding and original presentation reserved.</p>
+</footer>
+<div aria-hidden="true" class="race-modal" id="raceModal">
+<div class="race-modal-backdrop" data-close-race-modal=""></div>
+<section aria-labelledby="raceModalTitle" aria-modal="true" class="race-modal-panel" role="dialog">
+<button aria-label="Close race weekend" class="modal-close" data-close-race-modal="" type="button">×</button>
+<div id="raceModalContent"><div class="skeleton tall"></div></div>
+</section>
+</div>
+<div aria-hidden="true" class="profile-modal" id="profileModal">
+<div class="profile-modal-backdrop" data-close-profile-modal=""></div>
+<section aria-labelledby="profileModalTitle" aria-modal="true" class="profile-modal-panel" role="dialog">
+<button aria-label="Close profile" class="modal-close" data-close-profile-modal="" type="button">×</button>
+<div id="profileModalContent"><div class="skeleton tall"></div></div>
+</section>
+</div>
+<div aria-hidden="true" class="circuit-modal" id="circuitModal">
+<div class="circuit-modal-backdrop" data-close-circuit-modal=""></div>
+<section aria-labelledby="circuitModalTitle" aria-modal="true" class="circuit-modal-panel" role="dialog">
+<button aria-label="Close circuit intelligence" class="modal-close" data-close-circuit-modal="" type="button">×</button>
+<div id="circuitModalContent"><div class="skeleton tall"></div></div>
+</section>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script defer="" src="app.js?v=2.7.2-podium-fix"></script>
+<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "9d15c70925cf4a25bcc187e2603683f0"}' src="https://static.cloudflareinsights.com/beacon.min.js" type="module"></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
